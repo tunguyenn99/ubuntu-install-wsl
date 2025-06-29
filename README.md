@@ -13,15 +13,15 @@
 
 ### Bước 1: Tìm kiếm Microsoft Store
 
-![Tìm kiếm Microsoft Store](/images/1. search-store.png)
+![Tìm kiếm Microsoft Store](images/01_search_store.png)
 
 ### Bước 2: Tìm kiếm và cài đặt Ubuntu 20.04 LTS
 
-![Cài đặt Ubuntu](images/2. install-ubuntu-20046-lts.png)
+![Cài đặt Ubuntu](images/02_install_ubuntu_20046_lts.png)
 
 ### Bước 3: Khởi chạy Ubuntu lần đầu từ Start Menu
 
-![Khởi chạy Ubuntu](images/3. run-ubuntu-20045-lts.png)
+![Khởi chạy Ubuntu](images/03_run_ubuntu_20045_lts.png)
 
 ---
 
@@ -29,9 +29,9 @@
 
 Sau khi mở Ubuntu lần đầu, giao diện sẽ như sau:
 
-![Giao diện Ubuntu CLI](images/4. ubuntu-cli.png)
+![Giao diện Ubuntu CLI](images/04_ubuntu_cli.png)
 
-Bạn sẽ được yêu cầu tạo username và password.
+Bạn sẽ được yêu cầu tạo username và password
 
 ---
 
@@ -43,6 +43,10 @@ Chạy các lệnh sau:
 sudo apt update && sudo apt upgrade -y
 sudo apt install python3 python3-pip python3-venv -y
 ```
+
+Ví dụ:
+
+![Giao diện nhập lệnh Ubuntu CLI](images/05_ubuntu_cli_example.png)
 
 ---
 

@@ -1,4 +1,6 @@
-# 🐧 ubuntu-install-wsl
+# 🐧 Cài đặt Ubuntu trên Windows
+
+> Link Youtube: https://youtu.be/UX_0pw0nMmY
 
 > Cài đặt Ubuntu 20.04 LTS trên Windows (WSL) và thiết lập môi trường Python + Git để phát triển
 

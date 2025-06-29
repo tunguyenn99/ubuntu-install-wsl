@@ -11,14 +11,33 @@
 
 ## 1️⃣ Cài đặt Ubuntu 20.04 từ Microsoft Store
 
-1. Mở **Microsoft Store**
-2. Tìm kiếm **Ubuntu 20.04 LTS**
-3. Click `Install`
-4. Sau khi cài xong, mở Ubuntu lần đầu → hệ thống sẽ yêu cầu tạo username và password
+### Bước 1: Tìm kiếm Microsoft Store
+
+![Tìm kiếm Microsoft Store](/images/1. search-store.png)
+
+### Bước 2: Tìm kiếm và cài đặt Ubuntu 20.04 LTS
+
+![Cài đặt Ubuntu](images/2. install-ubuntu-20046-lts.png)
+
+### Bước 3: Khởi chạy Ubuntu lần đầu từ Start Menu
+
+![Khởi chạy Ubuntu](images/3. run-ubuntu-20045-lts.png)
 
 ---
 
-## 2️⃣ Cập nhật hệ thống và cài Python
+## 2️⃣ Thiết lập Ubuntu
+
+Sau khi mở Ubuntu lần đầu, giao diện sẽ như sau:
+
+![Giao diện Ubuntu CLI](images/4. ubuntu-cli.png)
+
+Bạn sẽ được yêu cầu tạo username và password.
+
+---
+
+## 3️⃣ Cập nhật hệ thống và cài Python
+
+Chạy các lệnh sau:
 
 ```bash
 sudo apt update && sudo apt upgrade -y
@@ -27,7 +46,7 @@ sudo apt install python3 python3-pip python3-venv -y
 
 ---
 
-## 3️⃣ Tạo môi trường ảo Python
+## 4️⃣ Tạo môi trường ảo Python
 
 ```bash
 python3 -m venv venv
@@ -38,7 +57,7 @@ source venv/bin/activate
 
 ---
 
-## 4️⃣ Cài đặt Git và cấu hình SSH
+## 5️⃣ Cài đặt Git và cấu hình SSH
 
 ### 🔹 Cài Git
 
@@ -46,31 +65,29 @@ source venv/bin/activate
 sudo apt install git -y
 ```
 
-### 🔹 Thiết lập tên và email Git (dùng để commit)
+### 🔹 Thiết lập Git
 
 ```bash
 git config --global user.name "Tên của bạn"
 git config --global user.email "email@example.com"
 ```
 
-### 🔹 Tạo SSH key để kết nối GitHub
+### 🔹 Tạo SSH key
 
 ```bash
 ssh-keygen -t ed25519 -C "email@example.com"
-```
-
-Ấn Enter liên tục để sử dụng cấu hình mặc định. Sau đó chạy:
-
-```bash
 cat ~/.ssh/id_ed25519.pub
 ```
 
-Copy kết quả và thêm vào GitHub tại:  
-**GitHub → Settings → SSH and GPG keys → New SSH key**
+> Kết quả giống như hình minh hoạ dưới đây:
+
+![Chạy lệnh mẫu](images/5. ubuntu-cli-example.png)
+
+Copy SSH key để thêm vào GitHub (Settings → SSH and GPG Keys → New SSH Key)
 
 ---
 
-## 5️⃣ Cài đặt VS Code (tuỳ chọn nhưng khuyến nghị)
+## 6️⃣ Cài đặt VS Code (tuỳ chọn nhưng khuyến nghị)
 
 > Bạn nên cài [Visual Studio Code](https://code.visualstudio.com/) bản Windows. Sau khi mở VS Code, cài extension `Remote - WSL` để làm việc trực tiếp với Ubuntu.
 
